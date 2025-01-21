@@ -47,15 +47,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</div> -->
 
-	<div class="wp-faq-deal-offer-wrap">
+	<!-- <div class="wp-faq-deal-offer-wrap">
 		<div class="wp-faq-deal-offer"> 
 			<div class="wp-faq-inn-deal-offer">
 				<h3 class="wp-faq-inn-deal-hedding"><span>Try FAQ Pro</span> in Essential Bundle Free For 5 Days.</h3>
 			</div>
 			<div class="wp-faq-deal-free-offer">
-				<a href="<?php echo esc_url( WP_FAQ_PLUGIN_BUNDLE_LINK ); ?>" target="_blank" class="wp-faq-sf-free-btn"><span class="dashicons dashicons-cart"></span>Try Pro For 5 Days Free</a>
+				<a href="<?php //echo esc_url( WP_FAQ_PLUGIN_BUNDLE_LINK ); ?>" target="_blank" class="wp-faq-sf-free-btn"><span class="dashicons dashicons-cart"></span>Try Pro For 5 Days Free</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 </div>

@@ -177,7 +177,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 								<li><?php esc_html_e('100% Multi language', 'sp-faq'); ?></li>
 							</ul>
 							<div class="upgrade-to-pro"><?php esc_html_e('Gain access to', 'sp-faq'); ?> <strong><?php esc_html_e('WP FAQ', 'sp-faq'); ?></strong></div>
-							<a class="button button-primary wpos-button-full button-orange" href="<?php echo esc_url( WP_FAQ_PLUGIN_LINK_UNLOCK ); ?>" target="_blank"><?php esc_html_e('Try Pro For 5 Days Free', 'sp-faq'); ?></a>
+							<a class="button button-primary wpos-button-full button-orange" href="<?php echo esc_url( WP_FAQ_PLUGIN_LINK_UNLOCK ); ?>" target="_blank"><?php esc_html_e('Upgrade to PRO', 'sp-faq'); ?></a>
 						</div><!-- .inside -->
 					</div><!-- #general -->
 				</div><!-- .meta-box-sortables -->

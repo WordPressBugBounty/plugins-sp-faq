@@ -85,6 +85,90 @@ padding: 30px;text-align: center;display: flex;flex-direction: column;align-item
 .sp-faq-testimonial-clnt{margin:15px 0 0 0; font-size:16px; font-weight:bold;}
 /* End - Solutions & Features Page CSS */
 
+/* welcome-screen-css start -M */
+.wp-faq-sf-btn{display: inline-block; font-size: 18px; padding: 10px 25px; border-radius: 100px;  background-color: #ff5d52; border-color: #ff5d52; color: #fff !important; font-weight: 600; text-decoration: none;}
+.wp-faq-sf-btn:hover,
+.wp-faq-sf-btn:focus{background-color: #ff5d52; border-color: #ff5d52;}
+.wp-faq-inner-Bonus-class{background: #46b450;
+  border-radius: 20px;
+  font-weight: 700;
+  padding: 5px 10px;
+  color: #fff;
+    line-height: 1;
+  font-size: 12px;}
+
+.wp-faq-black-friday-feature{padding: 30px 40px;
+  background: #fafafa;
+  border-radius: 20px 20px 0 0;
+  gap: 60px;
+  align-items: center;
+  flex-direction: row;
+  display: flex;}
+.wp-faq-black-friday-feature .wp-faq-inner-deal-class{flex-direction: column;
+  gap: 15px;
+  display: flex;
+  align-items: flex-start;}
+.wp-faq-black-friday-feature ul li{text-align: left;}
+.wp-faq-black-friday-feature .wp-faq-inner-list-class {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 10px;
+}
+.wp-faq-black-friday-feature .wp-faq-list-img-class {
+  min-height: 95px;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 20px;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;color: #000;
+  font-size: 12px;
+}
+.wp-faq-black-friday-banner-wrp .wp-faq-list-img-class img {
+  width: 100%;
+  flex: 0 0 40px;
+  font-size: 20px;
+  height: 40px;
+  width: 40px;
+  box-shadow: inset 0px 0px 15px 2px #c4f2ac;
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.wp-faq-main-feature-item{background: #fafafa;
+  padding: 20px 15px 40px;
+  border-radius: 0 0 20px 20px;margin-bottom: 40px;}
+.wp-faq-inner-feature-item{display: flex;
+  gap: 30px;
+  padding: 0 15px;}
+.wp-faq-list-feature-item {
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 8px;text-align: left;
+}
+.wp-faq-list-feature-item img {
+  width: 36px !important;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;margin-bottom: 5px;
+}
+.wp-faq-list-feature-item h5{margin: 0;
+  font-weight: bold;font-size: 16px;
+  text-decoration: underline;
+  text-underline-position: under;
+  color: #000;}
+.wp-faq-list-feature-item p {
+  color: #505050;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+/* welcome-screen-css end -M */
+
 /***** Vertical Tabs *****/
 .wp-faq-vtab-wrap, .wp-faq-vtab-wrap *{-webkit-box-sizing: border-box; -moz-box-sizing: border-box;box-sizing: border-box; outline:none;}
 .wp-faq-vtab-wrap{background-color: #f5f5f5; border-top:1px solid #e2dddb;}

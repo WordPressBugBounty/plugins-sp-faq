@@ -41,10 +41,10 @@ class Wp_Faq_Admin {
 		add_submenu_page( 'edit.php?post_type='.WP_FAQ_POST_TYPE, __('How it works, our plugins and offers', 'sp-faq'), __('How It Works', 'sp-faq'), 'manage_options', 'wp-faq-designs', array($this, 'wp_faq_how_it_work_page') );
 
 		// Setting page
-		add_submenu_page( 'edit.php?post_type='.WP_FAQ_POST_TYPE, __('Overview - FAQ', 'sp-faq'), '<span style="color:#2ECC71">'. __('Overview', 'sp-faq').'</span>', 'manage_options', 'sp-faq-solutions-features', array($this, 'wp_faq_solutions_features_page') );
+		add_submenu_page( 'edit.php?post_type='.WP_FAQ_POST_TYPE, __('Overview - FAQ', 'sp-faq'), __('Overview', 'sp-faq'), 'manage_options', 'sp-faq-solutions-features', array($this, 'wp_faq_solutions_features_page') );
 
 		// Premium Feature Page
-		add_submenu_page( 'edit.php?post_type='.WP_FAQ_POST_TYPE, __('Upgrade to PRO - WP FAQ', 'sp-faq'), '<span style="color:#ff2700">'.__('Upgrade to PRO - Try Pro For 5 Days Free', 'sp-faq').'</span>', 'edit_posts', 'wpfcas-premium', array($this, 'wp_faq_premium_page') );
+		add_submenu_page( 'edit.php?post_type='.WP_FAQ_POST_TYPE, __('Upgrade to PRO - WP FAQ', 'sp-faq'), '<span style="color:#2ECC71">'.__('Upgrade to PRO', 'sp-faq').'</span>', 'edit_posts', 'wpfcas-premium', array($this, 'wp_faq_premium_page') );
 	}
 
 	/**

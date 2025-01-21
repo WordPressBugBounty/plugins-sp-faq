@@ -12,11 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- <div class="pro-notice"><strong><?php //echo sprintf( __( 'Utilize this <a href="%s" target="_blank">Premium Features (With Risk-Free 30 days money back guarantee)</a> to get best of this plugin with Annual or Lifetime bundle deal.', 'sp-faq'), WP_FAQ_PLUGIN_LINK_UNLOCK); ?></strong></div> -->
 
-<div class="pro-notice">
+<!-- <div class="pro-notice">
 	<strong>
-		<?php echo sprintf( __( 'Try All These <a href="%s" target="_blank">PRO Features in Essential Bundle Free For 5 Days.</a>', 'sp-faq'), WP_FAQ_PLUGIN_LINK_UNLOCK); ?>
+		<?php // echo sprintf( __( 'Try All These <a href="%s" target="_blank">PRO Features in Essential Bundle Free For 5 Days.</a>', 'sp-faq'), WP_FAQ_PLUGIN_LINK_UNLOCK); ?>
 	</strong>
-</div>
+</div> -->
+
+<strong style="color:#2ECC71; font-weight: 700;"><?php echo sprintf( __( ' <a href="%s" target="_blank" style="color:#2ECC71;">Upgrade To Pro</a> and Get Designs, Optimization, Security, Backup, Migration Solutions @ one stop.', 'sp-faq'), WP_FAQ_PLUGIN_LINK_UNLOCK); ?></strong>
 
 <table class="form-table">
 	<tbody>

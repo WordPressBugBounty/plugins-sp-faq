@@ -5,7 +5,7 @@
  * Description: A simple FAQ plugin created with WordPress custom post type. Also work with Gutenberg shortcode block.
  * Text Domain: sp-faq
  * Domain Path: /languages/
- * Version: 3.9.1
+ * Version: 3.9.2
  * Author: WP OnlineSupport, Essential Plugin
  * Author URI: https://www.essentialplugin.com/wordpress-plugin/sp-responsive-wp-faq-with-category-plugin/
  * Requires at least: 4.0
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if( ! defined( 'WP_FAQ_VERSION' ) ) {
-	define( 'WP_FAQ_VERSION', '3.9.1' ); // Version of plugin
+	define( 'WP_FAQ_VERSION', '3.9.2' ); // Version of plugin
 }
 if( ! defined( 'WP_FAQ_DIR' ) ) {
 	define( 'WP_FAQ_DIR', dirname( __FILE__ ) ); // Plugin Dir
@@ -51,11 +51,11 @@ if( ! defined( 'WP_FAQ_SITE_LINK' ) ) {
 }
 
 if( ! defined( 'WP_FAQ_PLUGIN_BUNDLE_LINK' ) ) {
-	define('WP_FAQ_PLUGIN_BUNDLE_LINK', 'https://www.wponlinesupport.com/checkout/?edd_action=add_to_cart&download_id=14791&edd_options[price_id]=7&wpos_cart_flush=1&utm_source=WP&utm_medium=FAQ&utm_campaign=Welcome-Screen'); // Plugin link
+	define('WP_FAQ_PLUGIN_BUNDLE_LINK', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Welcome-Screen'); // Plugin link
 }
 
 if( ! defined( 'WP_FAQ_PLUGIN_LINK_UNLOCK' ) ) {
-	define('WP_FAQ_PLUGIN_LINK_UNLOCK', 'https://www.wponlinesupport.com/checkout/?edd_action=add_to_cart&download_id=14791&edd_options[price_id]=7&wpos_cart_flush=1&utm_source=WP&utm_medium=FAQ&utm_campaign=Features-PRO'); // Plugin link
+	define('WP_FAQ_PLUGIN_LINK_UNLOCK', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Features-PRO'); // Plugin link
 }
 
 /**

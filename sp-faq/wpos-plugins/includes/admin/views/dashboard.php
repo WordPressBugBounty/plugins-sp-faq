@@ -42,7 +42,7 @@ $plugins_filter = wpos_espbw_plugins_filter();
 if( ! current_user_can('install_plugins') ) {
 	echo '<div class="error">
 			<p>'. esc_html__( "Sorry, It looks like that you do not have permission to install the plugin.", "espbw") .'</p>
-			<p>'. esc_html__("You can take a look at our all plugins at", "espbw") .' <a href="https://profiles.wordpress.org/wponlinesupport#content-plugins" target="_blank">'. esc_html__("here", "espbw") . '</a>.</p>
+			<p>'. esc_html__("You can take a look at our all plugins at", "espbw") .' <a href="https://profiles.wordpress.org/essentialplugin#content-plugins" target="_blank">'. esc_html__("here", "espbw") . '</a>.</p>
 		 </div>';
 	return;
 }
@@ -316,7 +316,7 @@ if( ! current_user_can('install_plugins') ) {
 
 				<div class="espbw-no-result">
 					<p><?php esc_html_e('Sorry, Something happened wrong.', 'espbw'); ?></p>
-					<p><?php esc_html_e('You can take a look at our all plugins at', 'espbw'); ?> <a href="https://profiles.wordpress.org/wponlinesupport#content-plugins" target="_blank"><?php esc_html_e('here', 'espbw'); ?></a>.</p>
+					<p><?php esc_html_e('You can take a look at our all plugins at', 'espbw'); ?> <a href="https://profiles.wordpress.org/essentialplugin#content-plugins" target="_blank"><?php esc_html_e('here', 'espbw'); ?></a>.</p>
 				</div>
 
 			<?php }

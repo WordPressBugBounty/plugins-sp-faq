@@ -5,9 +5,9 @@
  * Description: A simple FAQ plugin created with WordPress custom post type. Also work with Gutenberg shortcode block.
  * Text Domain: sp-faq
  * Domain Path: /languages/
- * Version: 3.9.2
- * Author: WP OnlineSupport, Essential Plugin
- * Author URI: https://www.essentialplugin.com/wordpress-plugin/sp-responsive-wp-faq-with-category-plugin/
+ * Version: 3.9.3
+ * Author: Essential Plugin
+ * Author URI: https://www.essentialplugin.com
  * Requires at least: 4.0
  * 
  * @package WP FAQ
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if( ! defined( 'WP_FAQ_VERSION' ) ) {
-	define( 'WP_FAQ_VERSION', '3.9.2' ); // Version of plugin
+	define( 'WP_FAQ_VERSION', '3.9.3' ); // Version of plugin
 }
 if( ! defined( 'WP_FAQ_DIR' ) ) {
 	define( 'WP_FAQ_DIR', dirname( __FILE__ ) ); // Plugin Dir
@@ -33,27 +33,15 @@ if( ! defined( 'WP_FAQ_POST_TYPE' ) ) {
 if( ! defined( 'WP_FAQ_CAT' ) ) {
 	define( 'WP_FAQ_CAT', 'faq_cat' ); // Plugin Taxonomy
 }
-
-// if( ! defined( 'WP_FAQ_PLUGIN_BUNDLE_LINK' ) ) {
-// 	define('WP_FAQ_PLUGIN_BUNDLE_LINK', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Welcome-Screen'); // Plugin link
-// }
-
-// if( ! defined( 'WP_FAQ_PLUGIN_LINK_UNLOCK' ) ) {
-// 	define('WP_FAQ_PLUGIN_LINK_UNLOCK', 'https://www.essentialplugin.com/essential-plugin-bundle-pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Features-PRO'); // Plugin link
-// }
-
 if( ! defined( 'WP_FAQ_PLUGIN_LINK_UPGRADE' ) ) {
 	define('WP_FAQ_PLUGIN_LINK_UPGRADE', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Upgrade-PRO'); // Plugin Check link
 }
-
 if( ! defined( 'WP_FAQ_SITE_LINK' ) ) {
 	define('WP_FAQ_SITE_LINK', 'https://www.essentialplugin.com'); // Plugin link
 }
-
 if( ! defined( 'WP_FAQ_PLUGIN_BUNDLE_LINK' ) ) {
 	define('WP_FAQ_PLUGIN_BUNDLE_LINK', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Welcome-Screen'); // Plugin link
 }
-
 if( ! defined( 'WP_FAQ_PLUGIN_LINK_UNLOCK' ) ) {
 	define('WP_FAQ_PLUGIN_LINK_UNLOCK', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Features-PRO'); // Plugin link
 }

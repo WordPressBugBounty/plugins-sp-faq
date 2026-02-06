@@ -2,8 +2,8 @@
 Contributors: essentialplugin
 Tags: faq list, wp-faq with category, jquery ui accordion, faq with accordion, frequently asked questions,
 Requires at least: 4.0
-Tested up to: 6.8.1
-Stable tag: 3.9.3
+Tested up to: 6.8.3
+Stable tag: 3.9.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -112,6 +112,9 @@ Yes, Add a new FAQ page and add this short code <code>[sp_faq limit="-1"]</code>
 5. FAQ with category
 
 == Changelog ==
+
+= 3.9.4 (12, Nov 2025) =
+* [*] Check compatibility with WordPress version 6.8.3
 
 = 3.9.3 (15, May 2025) =
 * [*] Check compatibility with WordPress version 6.8.1

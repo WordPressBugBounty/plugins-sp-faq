@@ -1,13 +1,13 @@
 <?php
 /**
  * Plugin Name: WP FAQ
- * Plugin URL: https://www.essentialplugin.com/wordpress-plugin/sp-responsive-wp-faq-with-category-plugin/
+ * Plugin URL: https://essentialplugin.com/wordpress-plugin/sp-responsive-wp-faq-with-category-plugin/
  * Description: A simple FAQ plugin created with WordPress custom post type. Also work with Gutenberg shortcode block.
  * Text Domain: sp-faq
  * Domain Path: /languages/
- * Version: 3.9.3
+ * Version: 3.9.4
  * Author: Essential Plugin
- * Author URI: https://www.essentialplugin.com
+ * Author URI: https://essentialplugin.com
  * Requires at least: 4.0
  * 
  * @package WP FAQ
@@ -18,32 +18,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-if( ! defined( 'WP_FAQ_VERSION' ) ) {
-	define( 'WP_FAQ_VERSION', '3.9.3' ); // Version of plugin
+if ( ! defined( 'WP_FAQ_VERSION' ) ) {
+	define( 'WP_FAQ_VERSION', '3.9.4' ); // Version of plugin
 }
-if( ! defined( 'WP_FAQ_DIR' ) ) {
+if ( ! defined( 'WP_FAQ_DIR' ) ) {
 	define( 'WP_FAQ_DIR', dirname( __FILE__ ) ); // Plugin Dir
 }
-if( ! defined( 'WP_FAQ_URL' ) ) {
+if ( ! defined( 'WP_FAQ_URL' ) ) {
 	define( 'WP_FAQ_URL', plugin_dir_url( __FILE__ ) ); // Plugin URL
 }
-if( ! defined( 'WP_FAQ_POST_TYPE' ) ) {
+if ( ! defined( 'WP_FAQ_POST_TYPE' ) ) {
 	define( 'WP_FAQ_POST_TYPE', 'sp_faq' ); // Plugin post type
 }
-if( ! defined( 'WP_FAQ_CAT' ) ) {
+if ( ! defined( 'WP_FAQ_CAT' ) ) {
 	define( 'WP_FAQ_CAT', 'faq_cat' ); // Plugin Taxonomy
 }
-if( ! defined( 'WP_FAQ_PLUGIN_LINK_UPGRADE' ) ) {
-	define('WP_FAQ_PLUGIN_LINK_UPGRADE', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Upgrade-PRO'); // Plugin Check link
+if ( ! defined( 'WP_FAQ_PLUGIN_LINK_UPGRADE' ) ) {
+	define('WP_FAQ_PLUGIN_LINK_UPGRADE', 'https://essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Upgrade-PRO'); // Plugin Check link
 }
-if( ! defined( 'WP_FAQ_SITE_LINK' ) ) {
-	define('WP_FAQ_SITE_LINK', 'https://www.essentialplugin.com'); // Plugin link
+if ( ! defined( 'WP_FAQ_SITE_LINK' ) ) {
+	define('WP_FAQ_SITE_LINK', 'https://essentialplugin.com'); // Plugin link
 }
-if( ! defined( 'WP_FAQ_PLUGIN_BUNDLE_LINK' ) ) {
-	define('WP_FAQ_PLUGIN_BUNDLE_LINK', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Welcome-Screen'); // Plugin link
+if ( ! defined( 'WP_FAQ_PLUGIN_BUNDLE_LINK' ) ) {
+	define('WP_FAQ_PLUGIN_BUNDLE_LINK', 'https://essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Welcome-Screen'); // Plugin link
 }
-if( ! defined( 'WP_FAQ_PLUGIN_LINK_UNLOCK' ) ) {
-	define('WP_FAQ_PLUGIN_LINK_UNLOCK', 'https://www.essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Features-PRO'); // Plugin link
+if ( ! defined( 'WP_FAQ_PLUGIN_LINK_UNLOCK' ) ) {
+	define('WP_FAQ_PLUGIN_LINK_UNLOCK', 'https://essentialplugin.com/pricing/?utm_source=WP&utm_medium=FAQ&utm_campaign=Features-PRO'); // Plugin link
 }
 
 /**
@@ -125,7 +125,7 @@ function wp_faq_install() {
 	flush_rewrite_rules();
 
 	// Deactivate premium version of plugin
-	if( is_plugin_active('wp-faq-pro/faq.php') ) {
+	if ( is_plugin_active('wp-faq-pro/faq.php') ) {
 		add_action('update_option_active_plugins', 'wp_faq_deactivate_pro_version');
 	}
 }
@@ -158,14 +158,14 @@ function wp_faq_admin_notice() {
 	global $pagenow;
 
 	// If not plugin screen
-	if( 'plugins.php' != $pagenow ) {
+	if ( 'plugins.php' != $pagenow ) {
 		return;
 	}
 
 	// Check Lite Version
 	$dir = WP_PLUGIN_DIR . '/wp-faq-pro/faq.php';
 
-	if( ! file_exists( $dir ) ) {
+	if ( ! file_exists( $dir ) ) {
 		return;
 	}
 
@@ -173,7 +173,7 @@ function wp_faq_admin_notice() {
 	$notice_transient   = get_transient( 'sp_faq_install_notice' );
 
 	// If free plugin exist
-	if( $notice_transient == false && current_user_can( 'install_plugins' ) ) {
+	if ( $notice_transient == false && current_user_can( 'install_plugins' ) ) {
 			echo '<div class="updated notice" style="position:relative;">
 				<p>
 					<strong>'.sprintf( __('Thank you for activating %s', 'sp-faq'), 'WP FAQ').'</strong>.<br/>
@@ -225,7 +225,7 @@ function wpos_analytics_anl36_load() {
 	require_once dirname( __FILE__ ) . '/wpos-analytics/wpos-analytics.php';
 
 	$wpos_analytics =  wpos_anylc_init_module( array(
-							'id'				=> 36,
+							'id'			=> 36,
 							'file'			=> plugin_basename( __FILE__ ),
 							'name'			=> 'WP responsive FAQ with category plugin',
 							'slug'			=> 'wp-responsive-faq-with-category-plugin',
